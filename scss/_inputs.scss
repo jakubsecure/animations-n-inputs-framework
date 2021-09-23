@@ -1,0 +1,252 @@
+
+.standard-btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .3s ease-in;
+    color: $white-1;
+   
+}
+
+.purple-gradient-btn{
+    @extend .standard-btn;
+    background-image: linear-gradient(to right, $navy-blue, $purple, $fuchsia);
+
+
+}
+
+.orange-gradient-btn{
+    @extend .standard-btn;
+    background-image: linear-gradient(to right, $orange, $yellow);
+    color: $black;
+}
+
+.blue-gradient-btn{
+    @extend .standard-btn;
+    background-image: linear-gradient(to right, $navy-blue, $blue);
+}
+
+.dark-blue-gradient-btn{
+    @extend .standard-btn;
+    background-image: linear-gradient(to right, $dark-blue, $dark-blue-2);
+
+}
+
+.lemon-gradient-btn{
+    @extend .standard-btn;
+    background-image: linear-gradient(to right, $lemon, $green);
+    color: $black;
+}
+
+.black-btn{
+    @extend .standard-btn;
+    background-color: $grey-1;
+
+    &:hover{
+        background-color: $grey-3;
+    }
+}
+
+
+.lemon-btn{
+    @extend .standard-btn;
+    background-color: $lemon;
+    color: $black;
+
+    &:hover{
+        background-color: $lemon-rgba;
+    }
+}
+
+.green-btn{
+    @extend .standard-btn;
+    background-color: $green-2;
+    color: $black;
+
+    &:hover{
+        background-color: $green-2-rgba;
+    }
+}
+
+.dark-green-btn{
+    @extend .standard-btn;
+        background-color: $dark-green-1;
+
+    &:hover{
+        background-color: $dark-green-2;
+    }
+}
+
+.blue-btn{
+    @extend .standard-btn;
+        background-color: $light-blue;
+        color: $black;
+
+    &:hover{
+        background-color: $light-blue-rgba;
+    }
+}
+
+.dark-blue-btn{
+    @extend .standard-btn;
+    background-color: $dark-blue-3;
+}
+
+.less-radius{
+    border-radius: 6px !important;
+}
+
+.input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: $white-1;
+    box-shadow: 0 0 4px $white-1;
+    color: $grey-2;
+    text-align: center;
+    transition: transform .4s ease-in;
+
+
+    &::placeholder{
+            transition: transform .4s ease-out;
+            text-transform: lowercase;
+    }
+
+
+    &[type=submit], &[type=button]{
+        cursor: pointer;
+        padding: 12px;
+
+        &:hover{
+            transition: transform .4s ease-out;
+            transform: scale(1.1);
+        }
+
+        &:focus{
+            transform: unset;
+        }
+    }
+
+
+}
+
+.input-scale{
+    &:focus{
+        transition: transform .4s ease-out;
+        transform: scale(1.1);
+    }
+}
+
+.align-left{
+    text-align: left;
+}
+
+.dark-input{
+    @extend .input;
+    background-color: $grey-2 !important;
+    box-shadow: 0 0 8px $grey-2;
+    color: $white-1;
+    accent-color: $grey-2;
+
+}
+
+.dark-blue-input{
+    @extend .input;
+    accent-color: $dark-blue-4;
+    background-color: $dark-blue-4 !important;
+    box-shadow: 0 0 8px $dark-blue-4;
+    color: $white-1;
+}
+
+.dark-green-input{
+    @extend .input;
+    background-color: $dark-blue-4 !important;
+    box-shadow: 0 0 8px $dark-blue-4;
+    color: $white-1;
+    accent-color: $dark-blue-4;
+
+}
+
+.light-green-input{
+    @extend .input;
+    background-color: $light-green !important;
+    box-shadow: 0 0 8px $light-green;
+    color: $white-1;
+    accent-color: $light-green;
+}
+
+.light-blue-input{
+    @extend .input;
+    background-color: $light-blue-2 !important;
+    box-shadow: 0 0 8px $light-blue-2;
+    color: $white-1;
+    accent-color: $light-blue-2;
+}
+
+.rose-input{
+    @extend .input;
+    background-color: $rose !important;
+    box-shadow: 0 0 8px $rose;
+    color: $grey-2;
+    accent-color: $rose;
+}
+
+.grey-input{
+    @extend .input;
+    background-color: $grey-4 !important;
+    box-shadow: 0 0 8px $grey-4;
+    color: $white-1;
+    accent-color: $grey-4;
+}
+
+
+.white-input{
+    @extend .input;
+    background-color: $white-3 !important;
+    box-shadow: 0 0 8px $white-3;
+    color: $grey-2;
+    accent-color: $white-3;
+}
+
+.border-input{
+    @extend .input;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.black-border-input{
+    @extend .border-input;
+    border-bottom: 1.5px solid $grey-2;
+    color: $grey-2;
+}
+
+
+.dark-blue-border-input{
+    @extend .border-input;
+    border-bottom: 2px solid $dark-blue-5;
+    color: $dark-blue-5;
+    margin-top: 200px;
+
+    &::placeholder{
+        color: $dark-blue-5;
+    }
+}
+
+
+.white-border-input{
+    @extend .border-input;
+    border-bottom: 1.5px solid $white-2;
+    color: $white-2;
+
+
+    &::placeholder{
+        color: $white-2;
+    }
+}
+
+
